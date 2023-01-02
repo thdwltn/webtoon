@@ -1,0 +1,30 @@
+#cardContainer{
+  width: 232px;
+  height: 188px;
+  perspective: 300px;
+}
+#cardContainer .card{
+  width: 232px;
+  height: 188px;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+#cardContainer .card.front{
+  position: absolute;
+  transform: rotateY(0deg);
+}
+#cardContainer:hover .card.front{
+  transform: rotateY(180deg);
+}
+#cardContainer .card.back{
+  transform: rotateY(-180deg);
+  background: #333;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  
+}
+#cardContainer:hover .card.back{
+  
+  transform: rotateY(0deg);
+}

@@ -1,0 +1,17 @@
+@mixin layout($flexstart:flex-start,$between:space-between){
+  display:flex;
+  justify-content: $between;
+  align-items: $flexstart;
+}
+
+@mixin width($bottom:auto){
+  margin: 0 auto;
+  margin-bottom:$bottom;
+}
+
+@mixin btn{
+          width:36px; height:36px;
+          border:1px solid #aaaaaa;
+          border-radius:50%;
+          color:#aaaaaa;
+}
