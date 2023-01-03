@@ -7,20 +7,22 @@
   <title>webtoonMall</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./js/index.js">
 </head>
 <body>
   <div id="wrap">
     <!-- header -->
     <header>
       <div id="head">
-        <h1><img src="./images/LOGO.png" alt=""></h1>
+        <h1><img src="./images/logo/LOGO.png" alt=""></h1>
+        <ul class="top">
+          <li><a href="#">login</a></li>
+          <li><a href="#">sing up</a></li>
+        </ul>
         <nav>
           <h2 class="hide">메인내비게이션</h2>
-          <ul class="top">
-            <li><a href="#">login</a></li>
-            <li><a href="#">sing up</a></li>
-          </ul>
           <ul class="bottom"> 
             <li><a href="#">Home</a></li>
             <li><a href="#">Elements</a></li>
@@ -64,51 +66,54 @@
        <!-- article2 -->
       <article id="box02">
         <div>
-          <h3>TOP SERIES</h3><span></span>
+          <h3>TOP SERIES<span></span></h3>
           <div class="gallery">
             <!-- 1 -->
-            <figure><a href="#"><img src="./images/box02/box02_img1.jpg" alt="사진01">
+            <figure><a href="#"><img src="./images/box02/box02_img1.jpg" alt="사진01"></a>
             <figcaption>
               <dl>
-                <dt class="title"></dt>
-                <dd class="view"><i></i></dd>
-                <dd class="des"></dd>
+                <dt class="title">짝사랑을 끝내는 방법</dt>
+                <dd class="aut">파이</dd>
+                <dd class="view"><i class="fa-solid fa-eye"></i>82k</dd>
+                <dd class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minus non cumque acc</dd>
               </dl>
             </figcaption>
-            </a>
+           
             </figure>
             <!-- 2 -->
-            <figure><a href="#"><img src="./images/box02/box02_img2.jpg" alt="사진02">
+            <figure><a href="#"><img src="./images/box02/box02_img2.jpg" alt="사진02"></a>
             <figcaption>
               <dl>
-                <dt class="title"></dt>
-                <dd class="view"><i></i></dd>
-                <dd class="des"></dd>
+                <dt class="title">달빛이 그리는 바다</dt>
+                <dd class="aut">도저&고리</dd>
+                <dd class="view"><i class="fa-solid fa-eye"></i>12k</dd>
+                <dd class="des">usantium, error magni dolor officia odit facilis explicabo aliquid illum laborum repellendus quam.</dd>
               </dl>
             </figcaption>
-            </a>
+            
             </figure>
             <!-- 3 -->
-            <figure><a href="#"><img src="./images/box02/box02_img3.jpg" alt="사진03">
+            <figure><a href="#"><img src="./images/box02/box02_img3.jpg" alt="사진03"></a>
             <figcaption>
               <dl>
-                <dt class="title"></dt>
-                <dd class="view"><i></i></dd>
-                <dd class="des"></dd>
+                <dt class="title">하늘의 포토그램</dt>
+                <dd class="aut">아지노 모토</dd>
+                <dd class="view"><i class="fa-solid fa-eye"></i>2,888</dd>
+                <dd class="des">reprehenderit, aspernatur recusandae provident. Architecto.</dd>
               </dl>
             </figcaption>
-            </a>
+            
             </figure>
             <!-- 4 -->
-            <figure><a href="#"><img src="./images/box02/box02_img4.jpg" alt="사진04">
+            <figure><a href="#"><img src="./images/box02/box02_img4.jpg" alt="사진04"></a>
             <figcaption>
               <dl>
-                <dt class="title"></dt>
-                <dd class="view"><i></i></dd>
-                <dd class="des"></dd>
+                <dt class="title">안녕!나의 단팥그림</dt>
+                <dd class="aut">카스테라</dd>
+                <dd class="view"><i class="fa-solid fa-eye"></i>8,333</dd>
+                <dd class="des"> reprehenderit, aspernatur recusandae provident. Architecto. reprehenderit, aspernatur recusandae provident. </dd>
               </dl>
             </figcaption>
-            </a>
             </figure>
           </div>
         </div>
@@ -148,29 +153,98 @@
             <li><a href="#">Thriller</a></li>
             <li><a href="#">Completed</a></li>
           </ul>
-          <figure><a href="#" target="_blank"><div id="cardContainer">
-            <div class="card front"><img src="./images/box03/box04_img1.jpg" alt="사진1"></div>
-            <div class="card back">
-              <h3>curstde princess club</h3>
-              <h4>LambCat</h4>
-              <p>
-                autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
-              </p>
-            </div>
-            <figcaption>제목1</figcaption></a></figure>
-          
+          <div class="click"><i class="fa-regular fa-hand-point-down"></i></div>
+          <!-- ul>li안에 div or figure두개 -->
+          <div class="swipe">
+            <ul>
+              <li><a href="#" target="_blank" style="text-align: center;">
+                <div id="cardContainer">
+                  <div class="card front">
+                    <img src="./images/box03/box04_img1.jpg" alt="사진1">
+                  </div>
+                  <div class="card back">
+                    <h3>curstde princess club</h3>
+                    <h4>LambCat</h4>
+                    <p>
+                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                    </p>
+                  </div>
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="#" target="_blank" style="text-align: center;">
+                <div id="cardContainer">
+                  <div class="card front">
+                    <img src="./images/box03/box04_img2.jpg" alt="사진1">
+                  </div>
+                  <div class="card back">
+                    <h3>curstde princess club</h3>
+                    <h4>LambCat</h4>
+                    <p>
+                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                    </p>
+                  </div>
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="#" target="_blank" style="text-align: center;">
+                <div id="cardContainer">
+                  <div class="card front">
+                    <img src="./images/box03/box04_img3.jpg" alt="사진1">
+                  </div>
+                  <div class="card back">
+                    <h3>curstde princess club</h3>
+                    <h4>LambCat</h4>
+                    <p>
+                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                    </p>
+                  </div>
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="#" target="_blank" style="text-align: center;">
+                <div id="cardContainer">
+                  <div class="card front">
+                    <img src="./images/box03/box04_img4.jpg" alt="사진1">
+                  </div>
+                  <div class="card back">
+                    <h3>curstde princess club</h3>
+                    <h4>LambCat</h4>
+                    <p>
+                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                    </p>
+                  </div>
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="#" target="_blank" style="text-align: center;">
+                <div id="cardContainer">
+                  <div class="card front">
+                    <img src="./images/box03/box04_img5.jpg" alt="사진1">
+                  </div>
+                  <div class="card back">
+                    <h3>curstde princess club</h3>
+                    <h4>LambCat</h4>
+                    <p>
+                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                    </p>
+                  </div>
+              </a></li>
+            </ul>
+          </div>
 
           </div>
         </div>
       </article>
        <!-- article5 -->
       <article id="box05">
-        <div id="top">
+        <div>
+        <div class="event">
           <h3>놓칠수 없는 <b>이벤트</b></h3>
           <p>더보기<i class="fa-solid fa-chevron-right"></i></p>
         </div>
         <!-- overflow:hidden 3개만 보이게-->
-        <div id="main"> 
+        <div class="main"> 
         <ul>
           <li><a href="#"><img src="./images/event/box05_slide1.jpg" alt="event1"></a></li>
           <li><a href="#"><img src="./images/event/box05_slide2.jpg" alt="event1"></a></li>
@@ -181,30 +255,32 @@
         </ul>
         <div class="swiper-pagination"></div>
         </div>
-        
+      </div>
       </article>
     </main>
     
     <!-- aside -->
     <aside class="top"><a href="#wrap">TOP</a></aside>
     <aside class="side">
-      <div class="front">Recently viewd<i class="fa-solid fa-chevron-left"></i></div>
-      <div class="back">
-        <ul>
-          <li>Recently viewd</li>
-          <li><a href="#"><img src="./images/nav/nav1.jpg" alt="nav1"></a></li>
-          <li><a href="#"><img src="./images/nav/nav2.jpg" alt="nav2"></a></li>
-          <li><a href="#"><img src="./images/nav/nav3.jpg" alt="nav3"></a></li>
-          <li><a href="#"><img src="./images/nav/nav4.jpg" alt="nav4"></a></li>
-          <li><a href="#"><img src="./images/nav/nav5.jpg" alt="nav5"></a></li>
-        </ul>
+      <div class="front">Recently viewd &nbsp;<i class="fa-solid fa-chevron-down"></i>
+        <div class="back">
+          <ul>
+            <li>Recently viewd</li>
+            <li><a href="#"><img src="./images/nav/nav1.jpg" alt="nav1"></a></li>
+            <li><a href="#"><img src="./images/nav/nav2.jpg" alt="nav2"></a></li>
+            <li><a href="#"><img src="./images/nav/nav3.jpg" alt="nav3"></a></li>
+            <li><a href="#"><img src="./images/nav/nav4.jpg" alt="nav4"></a></li>
+            <li><a href="#"><img src="./images/nav/nav5.jpg" alt="nav5"></a></li>
+          </ul>
+        </div>
       </div>
+      
     </aside>
     <aside class="fix">
       <!-- background -->
       <div>
-        <h3>WEBTOON에 오신걸 환영합니다!</h3>
-        <p>babaababbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+        <h3>토요일은 WEBTOON 반값 할인!</h3>
+        <div class="close"><img src="./images/logo/close.png" alt=""></div>
       </div>
     </aside>
     <div id="bottom">
@@ -213,72 +289,71 @@
         <div class="down">
         <h4>Download WEBTOON now!</h4>
         <ul>
-          <li><a href="#"><img src="./images/GooglePlay.png" alt="google"></a></li>
-          <li><a href="#"><img src="./images/appleStore.png" alt="apple"></a></li>
+          <li><a href="#"><img src="./images/logo/GooglePlay.png" alt="google"></a></li>
+          <li><a href="#"><img src="./images/logo/appleStore.png" alt="apple"></a></li>
         </ul>
         </div>
-        <dl>
-          <dt>
-            <span>LOCATION</span>
-          </dt>
-          <dd>
-            <address>580, BROADWAY, 10012 - NEW YORK
-              NY - U</address>
-          </dd>
-          <dd>
-            <a href="tel:+1 2123431725">Tel. +1 2123431725</a>
-          </dd>
-          <dd>
-            <a href="mailto:info@thememove.com">Email. info@thememove.com</a>
-          </dd>
-        </dl>
-        <dl>
-          <dt>PRODUCT</dt>
-          <dd><a href="#">HOW TO BUY</a></dd>
-          <dd><a href="#">GENERAL INFORMATION</a></dd>
-          <dd><a href="#">PAYMENT</a></dd>
-          <dd><a href="#">SHIPPING</a></dd>
-          <dd><a href="#">RETURNS</a></dd>
-          <dd><a href="#">EXCHANGES</a></dd>
-          <dd><a href="#">GIFT CARD</a></dd>
-          <dd><a href="#">MY ACCOUNT</a></dd>
-          <dd><a href="#">WATCHES</a></dd>
-        </dl>
-
-        <dl>
-          <dt>PRICE</dt>
-          <dd><a href="#">ENVIRONMENTAL POLICY</a></dd>
-          <dd><a href="#">ANIMAL WELFARE</a></dd>
-          <dd><a href="#">PRIVACY POLICY</a></dd>
-          <dd><a href="#">PURCHASE CONDITIONS</a></dd>
-          <dd><a href="#">GIFT CARD CONDITIONS</a></dd>
-          <dd><a href="#">WARRANTY ON WATCHES</a></dd>
-        </dl>
-        <dl>
-          <dt>RESOURCE</dt>
-          <dd><a href="#">ABOUT US</a></dd>
-          <dd><a href="#">OFFICES</a></dd>
-          <dd><a href="#">STORES</a></dd>
-          <dd><a href="#">WORK WITH US</a></dd>
-          <dd><a href="#">CONTACT</a></dd>
-        </dl>
-        <dl>
-          <dt>COMPANY</dt>
-          <dd><a href="#">ABOUT US</a></dd>
-          <dd><a href="#">OFFICES</a></dd>
-          <dd><a href="#">STORES</a></dd>
-          <dd><a href="#">WORK WITH US</a></dd>
-          <dd><a href="#">CONTACT</a></dd>
-        </dl>
       </aside>
       <!-- footer -->
     <footer>
-      <ul class="sns">
-        <li><a href="#"><img src="./images/logo/insta.png" alt="insta"></a></li>
-        <li><a href="#"><img src="./images/logo/youtube.png" alt="youtube"></a></li>
-        <li><a href="#"><img src="./images/logo/blog.png" alt="blog"></a></li>
-        <li><a href="#"><img src="./images/logo/kakao.png" alt="kakao"></a></li>
-      </ul>
+      <div class="dl">
+      <dl>
+        <dt>
+          <span>LOCATION</span>
+        </dt>
+        <dd>
+          <address>580, BROADWAY, 10012<br> - NEW YORK
+            NY - U</address>
+        </dd>
+        <dd>
+          <a href="tel:+1 2123431725">Tel. +1 2123431725</a>
+        </dd>
+        <dd>
+          <a href="mailto:info@thememove.com">Email. info@thememove.com</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>PRODUCT</dt>
+        <dd><a href="#">HOW TO BUY</a></dd>
+        <dd><a href="#">GENERAL INFORMATION</a></dd>
+        <dd><a href="#">PAYMENT</a></dd>
+        <dd><a href="#">SHIPPING</a></dd>
+        <dd><a href="#">RETURNS</a></dd>
+        <dd><a href="#">EXCHANGES</a></dd>
+        <dd><a href="#">GIFT CARD</a></dd>
+        <dd><a href="#">MY ACCOUNT</a></dd>
+        <dd><a href="#">WATCHES</a></dd>
+      </dl>
+
+      <dl>
+        <dt>PRICE</dt>
+        <dd><a href="#">ENVIRONMENTAL POLICY</a></dd>
+        <dd><a href="#">ANIMAL WELFARE</a></dd>
+        <dd><a href="#">PRIVACY POLICY</a></dd>
+        <dd><a href="#">PURCHASE CONDITIONS</a></dd>
+        <dd><a href="#">GIFT CARD CONDITIONS</a></dd>
+        <dd><a href="#">WARRANTY ON WATCHES</a></dd>
+      </dl>
+      <dl>
+        <dt>RESOURCE</dt>
+        <dd><a href="#">ABOUT US</a></dd>
+        <dd><a href="#">OFFICES</a></dd>
+        <dd><a href="#">STORES</a></dd>
+        <dd><a href="#">WORK WITH US</a></dd>
+        <dd><a href="#">CONTACT</a></dd>
+      </dl>
+      <dl>
+        <dt>COMPANY</dt>
+        <dd><a href="#">ABOUT US</a></dd>
+        <dd><a href="#">OFFICES</a></dd>
+        <dd><a href="#">STORES</a></dd>
+        <dd><a href="#">WORK WITH US</a></dd>
+        <dd><a href="#">CONTACT</a></dd>
+      </dl>
+      </div>
+
+      <div class="bottom">
+      
       <ul class="help">
         <li><a href="#">Feedback</a></li>
         <li><a href="#">Help</a></li>
@@ -287,7 +362,14 @@
         <li><a href="#">Advertise</a></li>
       </ul>
       <small>&copy; COPYRIGHT 2022.THEME MADE BY THEMEMOVEimg </small>
-      <p><img src="./images/LOGO.png" alt="logo"></p>
+      <ul class="sns">
+        <li><a href="#"><img src="./images/logo/insta.png" alt="insta"></a></li>
+        <li><a href="#"><img src="./images/logo/youtube.png" alt="youtube"></a></li>
+        <li><a href="#"><img src="./images/logo/blog.png" alt="blog"></a></li>
+        <li><a href="#"><img src="./images/logo/kakao.png" alt="kakao"></a></li>
+      </ul>
+      <p><img src="./images/logo/LOGO.png" alt="logo"></p>
+      </div>
     </footer>
     </div>
   </div>
