@@ -9,7 +9,18 @@
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./js/index.js">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./js/jquery-3.6.1.min.js"> -->
+  <!-- <link defer rel="stylesheet" href="./js/index.js"> -->
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/index.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -41,32 +52,33 @@
       <article id="box01">
         <div>
           <div class="left">
-            <h3>NEW WEBTOON FOR
-              <br>TEENAGER</h3>
+            <h3><b>NEW</b>&nbsp; WEBTOON FOR
+              <br><b>TEENAGER</b></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis minima molestiae consequuntur officiis explicabo voluptate vitae quod ab est ut iusto corrupti commodi aspernatur a inventore, ipsam delectus! Sint!</p>
             <ul>
               <li><a href="#">GET STARTED</a></li>
               <li><a href="#">BUY NOW</a></li>
             </ul>
           </div>
-          <div class="right">
-            <ul>
-              <li><a href="#"><img src="./images/box01/box01_slide1.jpg" alt="사진1"></a></li>
-              <li><a href="#"><img src="./images/box01/box01_slide2.jpg" alt="사진2"></a></li>
-              <li><a href="#"><img src="./images/box01/box01_slide3.jpg" alt="사진3"></a></li>
-              <li><a href="#"><img src="./images/box01/box01_slide4.jpg" alt="사진4"></a></li>
-              <li><a href="#"><img src="./images/box01/box01_slide5.jpg" alt="사진5"></a></li>
-              <li><a href="#"><img src="./images/box01/box01_slide6.jpg" alt="사진6"></a></li>
+          <div class="swiper right">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide1.jpg" alt="사진1"></a></li>
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide2.jpg" alt="사진2"></a></li>
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide3.jpg" alt="사진3"></a></li>
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide4.jpg" alt="사진4"></a></li>
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide5.jpg" alt="사진5"></a></li>
+              <li class="swiper-slide"><a href="#"><img src="./images/box01/box01_slide6.jpg" alt="사진6"></a></li>
             </ul>
-            <div class="prev"></div>
-            <div class="next"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </article>
        <!-- article2 -->
       <article id="box02">
         <div>
-          <h3>TOP SERIES<span></span></h3>
+          <h3>TOP SERIES</h3>
           <div class="gallery">
             <!-- 1 -->
             <figure><a href="#"><img src="./images/box02/box02_img1.jpg" alt="사진01"></a>
@@ -122,24 +134,26 @@
       <article id="box03">
         <div>
           <div class="left">
-            <h3>New Collection</h3>
+            <h3><b>New Collection</b></h3>
             <h4>Lorem ipsum dolor sit ame distinctio deserunt sint asperiores veritatis laborum! Sint</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ea inventore distinctio quisquam dolorum eligendi accusantium, rerum voluptas cupiditate veritatis libero quae reiciendis ullam doloribus cum pariatur error est perspiciatis.</p>
             <button>view more</button>
           </div>
           <div class="right">
-            <figure><img src="./images/box03/box03_img1.jpg" alt="사진1">
-            <figcaption>제목1</figcaption></figure>
-            <figure><img src="./images/box03/box03_img2.jpg" alt="사진2">
-            <figcaption>제목2</figcaption></figure>
-            <figure><img src="./images/box03/box03_img3.jpg" alt="사진3">
-            <figcaption>제목3</figcaption></figure>
-            <figure><img src="./images/box03/box03_img4.jpg" alt="사진4">
-            <figcaption>제목4</figcaption></figure>
-            <figure><img src="./images/box03/box03_img5.jpg" alt="사진5">
-            <figcaption>제목5</figcaption></figure>
-            <figure><img src="./images/box03/box03_img6.jpg" alt="사진6">
-            <figcaption>제목6</figcaption></figure>
+
+                <figure><img src="./images/box03/box03_img1.jpg" alt="사진1">
+                <figcaption>외과의사 엘리제</figcaption></figure>
+                <figure><img src="./images/box03/box03_img2.jpg" alt="사진2">
+                <figcaption>낮에 뜨는 별</figcaption></figure>
+                <figure><img src="./images/box03/box03_img3.jpg" alt="사진3">
+                <figcaption>아가씨와 우렁총각</figcaption></figure>
+                <figure><img src="./images/box03/box03_img4.jpg" alt="사진4">
+                <figcaption>크로스 더 라인</figcaption></figure>
+                <figure><img src="./images/box03/box03_img5.jpg" alt="사진5">
+                <figcaption>구름을 비추는</figcaption></figure>
+                <figure><img src="./images/box03/box03_img6.jpg" alt="사진6">
+                <figcaption>말할 수 없는 남매</figcaption></figure>
+
           </div>
         </div>
       </article>
@@ -166,7 +180,7 @@
                     <h3>curstde princess club</h3>
                     <h4>LambCat</h4>
                     <p>
-                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                      autem voluptatibus! Ratione commodi neque porro veritatis pluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
                     </p>
                   </div>
               </a></li>
@@ -181,7 +195,7 @@
                     <h3>curstde princess club</h3>
                     <h4>LambCat</h4>
                     <p>
-                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                      autem voluptatibus! Ratione commodit, vitae voluptas.
                     </p>
                   </div>
               </a></li>
@@ -196,7 +210,7 @@
                     <h3>curstde princess club</h3>
                     <h4>LambCat</h4>
                     <p>
-                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                      autem voluptatibus! Ratione commodi neque porro veritatis perfluptatibus! Ratione commodi neque porro veritatis pluptatibus! Ratione commodi neque porro veritatis perendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
                     </p>
                   </div>
               </a></li>
@@ -226,7 +240,7 @@
                     <h3>curstde princess club</h3>
                     <h4>LambCat</h4>
                     <p>
-                      autem voluptatibus! Ratione commodi neque porro veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
+                     veritatis perferendis natus? Aliquam illum nihil rerum odit, vitae voluptas.
                     </p>
                   </div>
               </a></li>
@@ -234,26 +248,28 @@
           </div>
 
           </div>
-        </div>
+       
       </article>
        <!-- article5 -->
       <article id="box05">
         <div>
         <div class="event">
-          <h3>놓칠수 없는 <b>이벤트</b></h3>
+          <h3>BIG EVENT</h3>
           <p>더보기<i class="fa-solid fa-chevron-right"></i></p>
         </div>
         <!-- overflow:hidden 3개만 보이게-->
         <div class="main"> 
-        <ul>
-          <li><a href="#"><img src="./images/event/box05_slide1.jpg" alt="event1"></a></li>
-          <li><a href="#"><img src="./images/event/box05_slide2.jpg" alt="event1"></a></li>
-          <li><a href="#"><img src="./images/event/box05_slide3.jpg" alt="event1"></a></li>
-          <li><a href="#"><img src="./images/event/box05_slide4.jpg" alt="event1"></a></li>
-          <li><a href="#"><img src="./images/event/box05_slide5.jpg" alt="event1"></a></li>
-          <li><a href="#"><img src="./images/event/box05_slide6.jpg" alt="event1"></a></li>
-        </ul>
-        <div class="swiper-pagination"></div>
+            <ul>
+              <li><img src="./images/event/box05_slide1.jpg" alt="event1"><div class="see"><a href="#">보러가기</a></div></li>
+              <li><img src="./images/event/box05_slide2.jpg" alt="event2"><div class="see"><a href="#">보러가기</a></div></li>
+              <li><img src="./images/event/box05_slide3.jpg" alt="event3"><div class="see"><a href="#">보러가기</a></div></li>
+            </ul>
+            <ul>
+              <li><img src="./images/event/box05_slide4.jpg" alt="event4"><div class="see"><a href="#">보러가기</a></div></li>
+              <li><img src="./images/event/box05_slide5.jpg" alt="event5"><div class="see"><a href="#">보러가기</a></div></li>
+              <li><img src="./images/event/box05_slide6.jpg" alt="event6"><div class="see"><a href="#">보러가기</a></div></li>
+            </ul>
+
         </div>
       </div>
       </article>
@@ -363,17 +379,45 @@
       </ul>
       <small>&copy; COPYRIGHT 2022.THEME MADE BY THEMEMOVEimg </small>
       <ul class="sns">
-        <li><a href="#"><img src="./images/logo/insta.png" alt="insta"></a></li>
-        <li><a href="#"><img src="./images/logo/youtube.png" alt="youtube"></a></li>
-        <li><a href="#"><img src="./images/logo/blog.png" alt="blog"></a></li>
-        <li><a href="#"><img src="./images/logo/kakao.png" alt="kakao"></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-blog"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
       </ul>
       <p><img src="./images/logo/LOGO.png" alt="logo"></p>
       </div>
     </footer>
-    </div>
+    </div> </div>
   </div>
+
   <script>
+    
+    var swiper = new Swiper(".right", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      
+      var swiper = new Swiper(".box3_right", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+        
+      });
   </script>
 </body>
 </html>
