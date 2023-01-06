@@ -31,6 +31,11 @@
   $mr: margin-right;
   $ml: margin-left;
   $bg: background-color;
+
+  $os:'Open Sans', sans-serif;
+  $mul:'Mulish', sans-serif;
+  $noto: 'Noto Serif KR', serif;
+
   header{
     padding:36px 0 30px;
   }
@@ -59,6 +64,7 @@
 
   #box01{
     background-color: $gray;
+    padding-bottom: 40px;
     > div{
       @include content;
       display: flex;
@@ -83,7 +89,24 @@
       }
       > .right{
         width: 370px;
-        
+        padding: 70px 0 40px;
+        overflow: hidden;
+        ul{
+          display: flex;
+        }
+      }
+    }
+  }
+
+  #box02{
+    div{
+      @include content;
+      padding: 52px 0 80px;
+      h3{
+        font-size: 30px;
+        $mb: 30px;
+        position: relative;
+        font-family: $os;
       }
     }
   }
