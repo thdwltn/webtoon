@@ -11,6 +11,7 @@ $(function(){
 over();
 close();
 open();
+show2();
 })
 
 function over(){
@@ -34,7 +35,19 @@ function open(){
   })
 }
 
-
+function show1(){
+  $('.side>.front').on('click',function(e){
+    $('.side').css('right','0')
+  })
+}
+function show2(){
+  $('.side>.front').on('mouseenter',function(e){
+    $('.side').css('right','0')
+  })
+  $('.side>.front').on('mouseleaver',function(e){
+    $('.side').css('right','-150px')
+  })
+}
 //   
 //   
 //  $mouse.on('mouseenter',function(e){

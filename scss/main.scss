@@ -1,112 +1,326 @@
-  .hide{
-    width:0; height:0;
-    font-size:0; line-height: 0;
-    position:absolute;
-    visibility: hidden;
-    }
+.hide {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
 
-  @mixin content{
-    width: 1170px;
-    margin: 0 auto;
-  }
+@mixin content {
+  width: 1170px;
+  margin: 0 auto;
+}
 
-  @mixin absR($r,$b){
-    position: absolute;
-    right: $r; bottom: $b;
-  }
-  @mixin absL($l,$b){
-    position: absolute;
-    right: $l; bottom: $b;
-  }
-  @mixin center{
-    text-align: center;
-  }
+@mixin absR($r, $b) {
+  position: absolute;
+  right: $r;
+  bottom: $b;
+}
+@mixin absL($l, $b) {
+  position: absolute;
+  right: $l;
+  bottom: $b;
+}
+@mixin center {
+  text-align: center;
+}
 
-  $font:12px;
-  $gray:#494949;
-  $darkgray:#383838;
-  $lightgray:#aaa;
-  $yel:#fdce16;
-  $mb: margin-bottom;
-  $mr: margin-right;
-  $ml: margin-left;
-  $bg: background-color;
+$font: 12px;
 
-  $os:'Open Sans', sans-serif;
-  $mul:'Mulish', sans-serif;
-  $noto: 'Noto Serif KR', serif;
+$white: #fff;
+$lightgray: #aaa;
+$mediumgray: #666;
+$gray: #494949;
+$darkgray: #383838;
+$black: #2c2c2c;
+$yel: #fdce16;
 
-  header{
-    padding:36px 0 30px;
-  }
-  #head{
-    @include content;
+$mb: margin-bottom;
+$mr: margin-right;
+$ml: margin-left;
+
+$bg: background-color;
+
+$size: 10px;
+$size2: 20px;
+$size3: 30px;
+$size4: 40px;
+$size5: 50px;
+
+$os: "Open Sans", sans-serif;
+$mul: "Mulish", sans-serif;
+$noto: "Noto Serif KR", serif;
+
+header {
+  padding: 36px 0 $size3;
+}
+#head {
+  @include content;
+  display: flex;
+  position: relative;
+  padding: $size2 0 $size;
+  > .top {
     display: flex;
-    position: relative;
-    padding: 20px 0 10px;
-    > .top{
-      display: flex;
-      position: absolute;
-      right: 0; top: 0;
-      li{margin-left: 35px;}
+    position: absolute;
+    right: 0;
+    top: 0;
+    li {
+      margin-left: 35px;
     }
-    nav{
-      > .bottom{
-        display: flex;
-        @include absR(0,0);
-        li{margin-left: 25px;}
+  }
+  nav {
+    > .bottom {
+      display: flex;
+      @include absR(0, 0);
+      li {
+        margin-left: 25px;
       }
     }
-    h1{
-      margin-left: 25px;
-    }
   }
+  h1 {
+    margin-left: 25px;
+  }
+}
 
-  #box01{
-    background-color: $gray;
-    padding-bottom: 40px;
-    > div{
-      @include content;
-      display: flex;
-      justify-content: space-between;
-      > .left{
-        width: 450px;
-        color: #fff;
-        padding-top: 160px;
-        h3{$mb: 10px;}
-        p{$mb: 20px;}
-        ul{display: flex;
-          > li{
-            $mr:20px;
-            width: 100px;
-            line-height: 30px;
-            @include center;
-            a{color:#fff;}
-            &:nth-child(1){$bg:$darkgray}
-            &:nth-child(2){$bg:$yel}
+#box01 {
+  background-color: $gray;
+  padding-bottom: $size4;
+  > div {
+    @include content;
+    display: flex;
+    justify-content: space-between;
+    > .left {
+      width: 450px;
+      color: #fff;
+      padding-top: $size4 * 4;
+      h3 {
+        $mb: $size;
+      }
+      p {
+        $mb: $size2;
+      }
+      ul {
+        display: flex;
+        > li {
+          $mr: $size2;
+          width: $size5 * 2;
+          line-height: $size3;
+          @include center;
+          a {
+            color: #fff;
+          }
+          &:nth-child(1) {
+            $bg: $darkgray;
+          }
+          &:nth-child(2) {
+            $bg: $yel;
           }
         }
       }
-      > .right{
-        width: 370px;
-        padding: 70px 0 40px;
-        overflow: hidden;
-        ul{
-          display: flex;
+    }
+    > .right {
+      width: 370px;
+      padding: 70px 0 $size4;
+      overflow: hidden;
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+#box02 {
+  div {
+    @include content;
+    padding: 52px 0 $size4 * 2;
+    h3 {
+      font-size: $size3;
+      $mb: $size3;
+      position: relative;
+      font-family: $os;
+    }
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+      figure {
+        a {
+          img {
+            width: 256px;
+            border-radius: $size;
+            margin-bottom: $size2;
+          }
+        }
+        figcaption {
+          width: 256px;
+          text-align: center;
+          font-family: $mul;
+          font-size: 17px;
+          dl {
+            .title {
+              color: $mediumgray;
+              $mb : $size;
+              font-family: $noto;
+              font-size: $size2;
+            }
+            .aut {
+              color: $mediumgray;
+              $mb : $size;
+            }
+            .view {
+              color: $yel;
+              $mb : $size;
+            }
+          }
         }
       }
     }
   }
+}
 
-  #box02{
-    div{
-      @include content;
-      padding: 52px 0 80px;
-      h3{
-        font-size: 30px;
-        $mb: 30px;
-        position: relative;
-        font-family: $os;
+
+#box03{
+  background-color: $black;
+  div{
+    .left{
+      width: $size4 *10;
+      color: $white;
+      line-height: 25px;
+      h3{$mb:$size2;
+        b{
+          color:$yel;
+          font-size: $size3;
+          font-style: italic;
+          text-shadow: 4px 4px 2px $mediumgray;
+        }
+      }
+      h4{$mb:$size}
+      p{$mb:$size2}
+      button{
+        width: $size * 15;
+        $bg: $yel;
+        line-height: $size4;
+        font-size: $font;
+        border: 1px solid $mediumgray;
+        border-radius: $size;
+        font-size: $size2;
+        &:hover{
+          $bg:$yel;
+          box-shadow: 2px 2px 2px $yel;
+        }
+      }
+    }
+    .right{
+      width: 735px;
+      display: flex;
+      overflow: hidden;
+      color: $white;
+      text-align: center;
+      padding-top: $size3;
+      figure{
+        img{
+          $ml:$size;
+          transition: all 0.3 linear;
+          $mb: $size2;
+          &:hover{
+            box-shadow: 2px 2px 2px $white;
+            transform: translateY(-$size3);
+          }
+        }
       }
     }
   }
+}
+
+@keyframes motion{
+  0% {$mb: 0px;}
+  100% {$mb: $size;}
+}
+
+#box04{
+  div{
+    @include content;
+    padding: $size4 * 2 0;
+    text-align: center;
+    position: relative;
+    > h3{$mb: $size3}
+    > ul{
+      display: flex;
+      justify-content: center;
+      $mb : $size3;
+      li{
+        width: $size5 * 2;
+        border: 1px solid rgb(184, 184, 184) ;
+        border-radius: $size2;
+        $ml:$size2;
+        line-height: $size3;
+        a{color: $mediumgray;}
+      }
+    }
+    .click{
+      font-size: 25px;
+      width: $size5; height: $size5;
+      position: absolute;
+      top: 130px; left: $size5 * 2;
+      box-shadow: 2px 2px 2px $white;
+      animation: motion 0.3s linear 0s infinite alternate;
+    }
+    .swipe{
+      display: flex;
+      ul>li{
+        $ml: $size;
+      }
+    }
+  }
+}
+
+#box05{
+  div{
+    .event{
+      width: $size3 * 10;
+      h3{
+        font-size: 36px;
+        $mb: $size2;
+        color: $yel;
+        font-style: italic;
+        text-shadow: 4px 4px 2px $mediumgray;
+      }
+      p{font-size: $size3;}
+    }
+    .main{
+      width: $size * 100;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      ul{
+        display: flex;
+        width: $size * 260;
+        li{
+          position: relative;
+          img{width: $size3 *10;}
+          .see{
+            width: $size5 * 2; height: $size5 *2;
+            $bg:#fccd1194;
+            border-radius: 50%;
+            text-align: center;
+            line-height: $size5 * 2;
+            border: 2px solid $white;
+            font-weight: bold;
+            position: absolute;
+            left: 35%; top: 35%;
+            z-index: 999999999;
+            display: none;
+            transition:  all 0.3s linear;
+            a{color: $white;}
+          }
+        }
+      }
+    }
+  }
+}
+
+aside{
+  .top{}
+  .side{}
+  .fix{}
+}

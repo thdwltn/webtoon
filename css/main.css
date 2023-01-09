@@ -343,7 +343,7 @@ color: #fccd11;
 
 #box05 .main>ul{
   display: flex;
-  width: 2600;
+  width: 2600px;
 }
 
 #box05 .main>ul>li{
@@ -388,11 +388,17 @@ color: #fccd11;
   color: #fff;
 }
 .side{
-  
+  position: absolute;
+  width: 150px; height: 490px;
+  background-color: #aaa;
+  right: -150px;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
 }
 .side>.front{
-  position: fixed;
-  top: 20%; right: -75px;
+  position: absolute;
+  top: 75px; right: 75px;
   width: 200px; height: 50px;
   transform: rotate(90deg);
   background-color: #ebe6e6;
@@ -401,17 +407,11 @@ color: #fccd11;
   line-height: 40px;
   z-index: 99999999999999999999;
 }
-.side>.front>.back{
-  /* display: none; */
-  width: 100px; height: 500px;
-  background-color: #ebe6e6a2;
-  text-align: center;
-  transform: rotateY(-90deg);;
-}
-.side>.front>.back>ul>li:first-child{
+
+.side>.back>ul>li:first-child{
   padding: 10px 0;
 }
-.side>.front>.back>ul>li{
+.side>.back>ul>li{
   margin-bottom: 10px;
 }
 .fix{
