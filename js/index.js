@@ -12,6 +12,8 @@ over();
 close();
 open();
 show2();
+dis();
+
 })
 
 function over(){
@@ -34,6 +36,8 @@ function open(){
     $('.main').css({display:'block'})
   })
 }
+
+
 
 function show1(){
   $('.side>.front').on('click',function(e){

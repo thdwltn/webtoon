@@ -337,7 +337,6 @@ color: #fccd11;
   width: 1000px;
   position: relative;
   overflow: hidden;
-
   display: flex;
 }
 
@@ -348,10 +347,9 @@ color: #fccd11;
 
 #box05 .main>ul>li{
  position: relative;
-  
 }
 #box05 .main>ul>li>img{
-  width: 300px;
+  width: 300px; height: 300px;
 }
 #box05 .see{
   width: 100px; height: 100px;
@@ -439,7 +437,7 @@ color: #fccd11;
 
 .fix>div>.close{
   position: fixed;
-  right: 200px; bottom: 210px;
+  right: 200px; bottom: 215px;
 }
 .fix>div>.close>img{
   width: 50px; height: 50px;
