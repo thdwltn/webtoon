@@ -314,6 +314,18 @@ header{
   margin-left: 10px;
 }
 
+#cardContainer h3{
+ font-size: 15px;
+}
+#cardContainer p{
+ font-size: 14px;
+ line-height: 17px;
+}
+#cardContainer .hash{
+ font-size: 12px;
+}
+
+
 #box05{
   
   background-color: #4c4c4c;
