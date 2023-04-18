@@ -48,13 +48,11 @@ function show2(){
   $('.side>.front').on('mouseenter',function(e){
     $('.side').css('right','0')
   })
-  $('.side>.front').on('mouseleaver',function(e){
+  $('.side>.front').on('mouseenter',function(e){
+    $('.side>.front').html('close &nbsp;<i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i>')
+  })
+  $('.side>.front').on('click',function(e){
     $('.side').css('right','-150px')
   })
+
 }
-//   
-//   
-//  $mouse.on('mouseenter',function(e){
-// 
-//     $see.css({display:'block',transform:'scale(1.1)'});
-//   })

@@ -41,7 +41,9 @@
   }
 
   
-
+.swiper-slide>a>img{
+  width: 380px;
+}
 
 
 
@@ -149,8 +151,8 @@ header{
 }
 #box01 .right>ul{
   display: flex;
-  
 }
+
 
 
 #box02>div{
